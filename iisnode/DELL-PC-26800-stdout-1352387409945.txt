@@ -1,0 +1,5 @@
+dddd
+Express server listening on port \\.\pipe\82f7efe0-e151-4fa4-a40c-09fc1dc99ef7
+Base ok
+Command ---> 5 ----->  2
+[TypeError: Cannot read property 'toBSON' of undefined]

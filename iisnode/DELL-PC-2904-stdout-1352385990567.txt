@@ -1,0 +1,3 @@
+dddd
+Express server listening on port \\.\pipe\8b4d39fc-4fec-4ea2-bf01-8970356ca0ad
+Base ok

@@ -1,0 +1,15 @@
+dddd
+Express server listening on port \\.\pipe\7e57dc7d-6cd0-47f2-909b-8df1943065d6
+Base ok
+[90mGET / [32m200 [90m41ms - 170[0m
+Command ---> 5 ----->  4
+[90mGET /users [36m304 [90m14ms[0m
+[90mGET /users/add [32m200 [90m5ms - 332[0m
+Command ---> 5 ----->  1
+[90mPOST /users/add [36m302 [90m116ms - 68[0m
+Command ---> 5 ----->  4
+[90mGET /users [32m200 [90m16ms - 3.48kb[0m
+Command ---> 5 ----->  5
+[90mGET /users/details/14555 [32m200 [90m7ms - 342[0m
+Command ---> 5 ----->  4
+[90mGET /users [36m304 [90m8ms[0m

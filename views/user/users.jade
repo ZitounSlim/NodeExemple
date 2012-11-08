@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+    - var MyUsers=['Turkey Chili', 'Jalapeno Poppers', 'Fudge Brownies']
+    h1 listes des utilisateurs
+    a(href='/users/add') Add user
+    table
+        tr
+            td id
+            td name
+            td
+            td
+            td
+        -each user in Users
+            tr
+                td= user.id
+                td= user.name
+                - var lien ='users/details/'+user.id
+                td 
+                    a(href=lien) detail
+                - var lienupdate ='users/update/'+user.id
+                td 
+                    a(href=lienupdate) update
+                - var lienuremove ='users/remove/'+user.id
+                td 
+                    a(href=lienuremove) remove

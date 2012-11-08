@@ -1,0 +1,12 @@
+Application has thrown an uncaught exception and is terminated:
+ReferenceError: result is not defined
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\routes\user.js:16:130
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\AccesLayer\MongoAcces.js:72:27
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\collection.js:956:34
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\cursor.js:155:9
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\cursor.js:195:11
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\cursor.js:545:35
+    at Cursor.close (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\cursor.js:776:5)
+    at Cursor.nextObject (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\cursor.js:545:17)
+    at Array.0 (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\cursor.js:187:12)
+    at EventEmitter._tickCallback (node.js:190:38)

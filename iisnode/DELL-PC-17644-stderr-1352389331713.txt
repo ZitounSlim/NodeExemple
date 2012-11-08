@@ -1,0 +1,11 @@
+ReferenceError: req is not defined
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\routes\user.js:36:43
+    at callbacks (C:\Users\dell\node_modules\express\lib\router\index.js:162:37)
+    at param (C:\Users\dell\node_modules\express\lib\router\index.js:136:11)
+    at param (C:\Users\dell\node_modules\express\lib\router\index.js:133:11)
+    at pass (C:\Users\dell\node_modules\express\lib\router\index.js:143:5)
+    at Router._dispatch (C:\Users\dell\node_modules\express\lib\router\index.js:171:4)
+    at Object.router [as handle] (C:\Users\dell\node_modules\express\lib\router\index.js:33:10)
+    at next (C:\Users\dell\node_modules\connect\lib\proto.js:190:15)
+    at Object.methodOverride [as handle] (C:\Users\dell\node_modules\connect\lib\middleware\methodOverride.js:37:5)
+    at next (C:\Users\dell\node_modules\connect\lib\proto.js:190:15)

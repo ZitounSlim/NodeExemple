@@ -1,0 +1,4 @@
+dddd
+Express server listening on port \\.\pipe\f35ec399-0877-4483-a38c-b6703206516d
+Base ok
+Command ---> 5 ----->  5

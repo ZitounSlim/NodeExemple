@@ -1,0 +1,5 @@
+ - for (var i = 0; i < 3; ++i) {
+        tr
+            td= Users[i].id
+            td= Users[i].name
+        - }

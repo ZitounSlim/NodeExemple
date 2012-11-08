@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+      div
+        span Id :
+        span &nbsp;
+        span= User.id
+        input(type="hidden", name="id", value="")
+      div
+        span Name :
+        span &nbsp;
+        span= User.name
+      div
+         a(href='/users') retour

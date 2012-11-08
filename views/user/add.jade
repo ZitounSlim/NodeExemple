@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+    form(method="post", id="user-model-form")
+      p
+        input(type="text", name="id", value="")
+      p
+        input(type="text", name="name", value="")
+     
+      input(type="submit", value="Save")
+      a(href='/users') Annuler

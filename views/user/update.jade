@@ -1,0 +1,18 @@
+
+
+extends ../layout
+
+block content
+    form(method="post", id="user-model-form")
+      div
+        span Id :
+        span &nbsp;
+        span= User.id
+         input(type="hidden", name="id", value=User.id)
+      div
+        span Name :
+        span &nbsp;
+        input(type="text", name="name", value=User.name)
+      div
+          input(type="submit", value="Save")
+          a(href='/users') retour

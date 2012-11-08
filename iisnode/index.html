@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"DELL-PC-10968-stdout-1352381681398.txt","computername":"DELL-PC","pid":10968,"type":"stdout","created":1352381681398},{"file":"DELL-PC-1124-stdout-1352381814561.txt","computername":"DELL-PC","pid":1124,"type":"stdout","created":1352381814561},{"file":"DELL-PC-13948-stdout-1352387703404.txt","computername":"DELL-PC","pid":13948,"type":"stdout","created":1352387703404},{"file":"DELL-PC-16196-stderr-1352389404271.txt","computername":"DELL-PC","pid":16196,"type":"stderr","created":1352389404271},{"file":"DELL-PC-16196-stdout-1352389404268.txt","computername":"DELL-PC","pid":16196,"type":"stdout","created":1352389404268},{"file":"DELL-PC-17644-stderr-1352389331713.txt","computername":"DELL-PC","pid":17644,"type":"stderr","created":1352389331713},{"file":"DELL-PC-17644-stdout-1352389331711.txt","computername":"DELL-PC","pid":17644,"type":"stdout","created":1352389331711},{"file":"DELL-PC-18000-stdout-1352388393738.txt","computername":"DELL-PC","pid":18000,"type":"stdout","created":1352388393738},{"file":"DELL-PC-18032-stdout-1352387849600.txt","computername":"DELL-PC","pid":18032,"type":"stdout","created":1352387849600},{"file":"DELL-PC-1848-stderr-1352380974866.txt","computername":"DELL-PC","pid":1848,"type":"stderr","created":1352380974866},{"file":"DELL-PC-1848-stdout-1352380974863.txt","computername":"DELL-PC","pid":1848,"type":"stdout","created":1352380974863},{"file":"DELL-PC-19384-stdout-1352387366577.txt","computername":"DELL-PC","pid":19384,"type":"stdout","created":1352387366577},{"file":"DELL-PC-19884-stdout-1352381002015.txt","computername":"DELL-PC","pid":19884,"type":"stdout","created":1352381002015},{"file":"DELL-PC-20332-stdout-1352387421161.txt","computername":"DELL-PC","pid":20332,"type":"stdout","created":1352387421161},{"file":"DELL-PC-22148-stdout-1352389461267.txt","computername":"DELL-PC","pid":22148,"type":"stdout","created":1352389461267},{"file":"DELL-PC-26032-stdout-1352386032797.txt","computername":"DELL-PC","pid":26032,"type":"stdout","created":1352386032797},{"file":"DELL-PC-26800-stdout-1352387409945.txt","computername":"DELL-PC","pid":26800,"type":"stdout","created":1352387409945},{"file":"DELL-PC-2904-stderr-1352385990569.txt","computername":"DELL-PC","pid":2904,"type":"stderr","created":1352385990569},{"file":"DELL-PC-2904-stdout-1352385990567.txt","computername":"DELL-PC","pid":2904,"type":"stdout","created":1352385990567},{"file":"DELL-PC-8788-stdout-1352389372000.txt","computername":"DELL-PC","pid":8788,"type":"stdout","created":1352389372000}];
+        var lastUpdated = 1352389461471;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

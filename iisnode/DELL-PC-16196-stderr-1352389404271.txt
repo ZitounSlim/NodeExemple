@@ -1,0 +1,11 @@
+ReferenceError: a is not defined
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\AccesLayer\MongoAcces.js:132:43
+    at Db.collection (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\db.js:507:44)
+    at execDelete (C:\Users\dell\Documents\My Web Sites\TestExpress_4\AccesLayer\MongoAcces.js:130:41)
+    at [object Object].ExecCommand (C:\Users\dell\Documents\My Web Sites\TestExpress_4\AccesLayer\MongoAcces.js:157:34)
+    at [object Object].RemoveUser (C:\Users\dell\Documents\My Web Sites\TestExpress_4\Repository\UserRepostory.js:19:23)
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\routes\user.js:36:23
+    at callbacks (C:\Users\dell\node_modules\express\lib\router\index.js:162:37)
+    at param (C:\Users\dell\node_modules\express\lib\router\index.js:136:11)
+    at param (C:\Users\dell\node_modules\express\lib\router\index.js:133:11)
+    at pass (C:\Users\dell\node_modules\express\lib\router\index.js:143:5)

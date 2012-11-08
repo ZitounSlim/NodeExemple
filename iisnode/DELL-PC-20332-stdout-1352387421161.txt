@@ -1,0 +1,10 @@
+dddd
+Express server listening on port \\.\pipe\7b557465-672f-4d48-a704-19af1360312a
+Base ok
+[90mGET / [32m200 [90m24ms - 170[0m
+Command ---> 5 ----->  4
+[90mGET /users [36m304 [90m7ms[0m
+Command ---> 5 ----->  5
+[90mGET /users/update/6 [32m200 [90m8ms - 449[0m
+Command ---> 5 ----->  2
+[TypeError: Cannot read property 'toBSON' of undefined]

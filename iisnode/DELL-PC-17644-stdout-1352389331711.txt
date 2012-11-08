@@ -1,0 +1,9 @@
+dddd
+Express server listening on port \\.\pipe\2abe6252-bcf1-4cd1-9862-f53d0c97c3aa
+Base ok
+[90mGET / [32m200 [90m41ms - 170[0m
+Command ---> 5 ----->  4
+[90mGET /users [36m304 [90m7ms[0m
+Command ---> 5 ----->  5
+[90mGET /users/remove/7 [32m200 [90m4ms - 381[0m
+[90mPOST /users/remove/7 [31m500 [90m14ms[0m

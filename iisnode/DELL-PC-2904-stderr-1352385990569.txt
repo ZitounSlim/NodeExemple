@@ -1,0 +1,12 @@
+Application has thrown an uncaught exception and is terminated:
+ReferenceError: user is not defined
+    at new <anonymous> (C:\Users\dell\Documents\My Web Sites\TestExpress_4\Repository\UserRepostory.js:12:18)
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\server.js:29:26
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\AccesLayer\MongoAcces.js:153:17
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\db.js:287:14
+    at [object Object].<anonymous> (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\connection\server.js:235:7)
+    at [object Object].g (events.js:156:14)
+    at [object Object].emit (events.js:88:20)
+    at Db._callHandler (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\db.js:1472:25)
+    at C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\connection\server.js:430:30
+    at [object Object].parseBody (C:\Users\dell\Documents\My Web Sites\TestExpress_4\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:127:5)
